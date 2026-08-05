@@ -1,6 +1,12 @@
 # 🎓 JEE Aspirants vs IIT Acceptance Rate (1956-2026) 📈
 
 <p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a> <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <img src="https://img.shields.io/badge/Python-3.x-blue?style=flat-square" alt="Python"/> <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License"/>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+<p align="center">
   <img src="assets/banner.svg" alt="Dynamic Banner">
 </p>
 
