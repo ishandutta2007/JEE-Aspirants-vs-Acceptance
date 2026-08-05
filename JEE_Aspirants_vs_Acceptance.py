@@ -16,7 +16,7 @@ seats = [
 
 # Total distinct candidates who took the entrance exam
 aspirants = [
-    3000, 15000, 20000, 28000, 5000, 80000, 90000, 115000, 
+    3000, 15000, 20000, 28000, 54000, 80000, 90000, 115000, 
     198000, 455571, 1260000, 1200000, 1147125, 905590, 1410000, 1450000
 ]
 
@@ -42,7 +42,7 @@ for i, txt in enumerate(aspirants):
 
 # Annotate Seats
 for i, txt in enumerate(seats):
-    ax1.annotate(f'{txt:,}', (years[i], seats[i]), textcoords="offset points", xytext=(0,12), ha='center', fontsize=8, color='#2980b9', fontweight='bold', bbox=dict(boxstyle="round,pad=0.2", fc="white", ec='#3498db', alpha=0.85))
+    ax1.annotate(f'{txt:,}', (years[i], seats[i]), textcoords="offset points", xytext=(0,-18), ha='center', fontsize=8, color='#2980b9', fontweight='bold', bbox=dict(boxstyle="round,pad=0.2", fc="white", ec='#3498db', alpha=0.85))
 
 # Annotate Acceptance Rate
 for i, txt in enumerate(acceptance_rate):
