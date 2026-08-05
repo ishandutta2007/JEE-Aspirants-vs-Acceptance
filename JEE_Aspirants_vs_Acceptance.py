@@ -38,15 +38,15 @@ line3 = ax2.plot(years, acceptance_rate, color='#2ecc71', linestyle='--', marker
 
 # Annotate Aspirants
 for i, txt in enumerate(aspirants):
-    ax1.annotate(f'{txt:,}', (years[i], aspirants[i]), textcoords="offset points", xytext=(0,10), ha='center', fontsize=8, color='#e74c3c', alpha=0.7)
+    ax1.annotate(f'{txt:,}', (years[i], aspirants[i]), textcoords="offset points", xytext=(0,12), ha='center', fontsize=8, color='#c0392b', fontweight='bold', bbox=dict(boxstyle="round,pad=0.2", fc="white", ec='#e74c3c', alpha=0.85))
 
 # Annotate Seats
 for i, txt in enumerate(seats):
-    ax1.annotate(f'{txt:,}', (years[i], seats[i]), textcoords="offset points", xytext=(0,-15), ha='center', fontsize=8, color='#3498db', alpha=0.7)
+    ax1.annotate(f'{txt:,}', (years[i], seats[i]), textcoords="offset points", xytext=(0,-18), ha='center', fontsize=8, color='#2980b9', fontweight='bold', bbox=dict(boxstyle="round,pad=0.2", fc="white", ec='#3498db', alpha=0.85))
 
 # Annotate Acceptance Rate
 for i, txt in enumerate(acceptance_rate):
-    ax2.annotate(f'{txt:.2f}%', (years[i], acceptance_rate[i]), textcoords="offset points", xytext=(0,10), ha='center', fontsize=8, color='#2ecc71', alpha=0.9)
+    ax2.annotate(f'{txt:.2f}%', (years[i], acceptance_rate[i]), textcoords="offset points", xytext=(0,12), ha='center', fontsize=8, color='#27ae60', fontweight='bold', bbox=dict(boxstyle="round,pad=0.2", fc="white", ec='#2ecc71', alpha=0.85))
 
 # 5. Labels and Grid Formatting
 ax1.set_xlabel('Year', fontsize=12, fontweight='bold', labelpad=10)
