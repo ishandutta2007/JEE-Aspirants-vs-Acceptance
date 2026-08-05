@@ -36,6 +36,18 @@ line2 = ax1.plot(years, seats, color='#3498db', marker='s', linewidth=2.5, label
 # 4. Plot Acceptance Rate (Right Y-Axis)
 line3 = ax2.plot(years, acceptance_rate, color='#2ecc71', linestyle='--', marker='^', linewidth=2, label='Acceptance Rate (%)')
 
+# Annotate Aspirants
+for i, txt in enumerate(aspirants):
+    ax1.annotate(f'{txt:,}', (years[i], aspirants[i]), textcoords="offset points", xytext=(0,10), ha='center', fontsize=8, color='#e74c3c', alpha=0.7)
+
+# Annotate Seats
+for i, txt in enumerate(seats):
+    ax1.annotate(f'{txt:,}', (years[i], seats[i]), textcoords="offset points", xytext=(0,-15), ha='center', fontsize=8, color='#3498db', alpha=0.7)
+
+# Annotate Acceptance Rate
+for i, txt in enumerate(acceptance_rate):
+    ax2.annotate(f'{txt:.2f}%', (years[i], acceptance_rate[i]), textcoords="offset points", xytext=(0,10), ha='center', fontsize=8, color='#2ecc71', alpha=0.9)
+
 # 5. Labels and Grid Formatting
 ax1.set_xlabel('Year', fontsize=12, fontweight='bold', labelpad=10)
 ax1.set_ylabel('Number of People (Seats / Aspirants)', color='#2c3e50', fontsize=12, fontweight='bold')
